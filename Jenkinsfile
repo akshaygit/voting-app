@@ -1,7 +1,7 @@
 pipeline {
    agent any
    environment {
-       branchName = ${BRANCH_NAME}                              
+       def branchName = ${BRANCH_NAME}                              
    }
    stages {
        stage('Print variables') {
