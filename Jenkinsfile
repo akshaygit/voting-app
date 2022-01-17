@@ -4,7 +4,7 @@ pipeline {
        branchName = ${BRANCH_NAME}                              
    }
    stages {
-       stage(Print variables) {
+       stage('Print variables') {
            steps {
                echo env.branchName
            }
